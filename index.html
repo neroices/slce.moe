@@ -4,108 +4,133 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>neroices's personal site</title>
+        <style>
+            * {
+                font-family: "Times New Roman", Times, serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html, body {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #fff;
+                color: #000;
+                transition: background-color 0.4s, color 0.4s;
+            }
+
+            .container {
+                width: 100%;
+                max-width: 800px;
+                padding: 20px;
+                text-align: left;
+            }
+
+            a {
+                text-decoration: none;
+                transition: color 0.4s;
+            }
+
+            a:link,
+            a:visited {
+                color: blue;
+            }
+
+            a:hover {
+                color: lightskyblue;
+            }
+
+            .dark-mode a:link,
+            .dark-mode a:visited {
+                color: lightblue;
+            }
+
+            .dark-mode a:hover {
+                color: palegreen;
+            }
+
+            p {
+                font-size: 17px;
+                margin-bottom: 1em;
+            }
+
+            .dark-mode {
+                background-color: #121212;
+                color: #f1f1f1;
+            }
+
+            img {
+                display: block;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+            }
+
+            h1 {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .links {
+                text-align: center;
+            }
+
+            @media (max-width: 768px) {
+                .container {
+                    padding: 10px 50px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .container {
+                    padding: 10px 50px;
+                }
+            }
+        </style>
     </head>
-    <style>
-        * {
-            font-family: "Times New Roman", Times, serif;
-        }
-        body {
-            background-color: #fff;
-            color: #000;
-            margin-left: 30%;
-            margin-right: 30%;
-            margin-top: 8%;
-            margin-bottom: 8%;
-            transition:
-                background-color 0.4s,
-                color 0.4s;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        a:link,
-        a:visited {
-            color: blue;
-        }
-
-        a:hover {
-            color: red;
-        }
-
-        p {
-            font-size: 17px;
-        }
-
-        .dark-mode {
-            background-color: #121212;
-            color: #f1f1f1;
-        }
-
-        @media (max-width: 1024px) {
-            body {
-                margin-left: 15%;
-                margin-right: 15%;
-                padding: 25px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            body {
-                margin-left: 10%;
-                margin-right: 10%;
-                margin-top: 0;
-            }
-        }
-
-        @media (max-width: 480px) {
-            body {
-                margin-left: 10px;
-                margin-right: 10px;
-                margin-top: 5%;
-                margin-bottom: 20%;
-            }
-        }
-    </style>
     <body>
-        <img
-            src="https://github.com/neroices.png"
-            alt="neroices"
-            style="width: 150px; height: 150px; border-radius: 50%"
-        />
-        <h1><strong>neroices's personal site</strong></h1>
+        <div class="container">
+            <img
+                src="https://github.com/neroices.png"
+                alt="neroices"
+            />
+            <h1><strong>neroices's personal site</strong></h1>
 
-        <p>
-            Hey there and welcome to my little corner of the internet. You have
-            probably already noticed, this website is kind of a mess. Let me
-            just say it upfront, I cannot code. At all.
-        </p>
-        <p>
-            So if things look a bit weird or feel like they were thrown together
-            during a caffeine-fueled panic, well, now you know why. I made this
-            website using a mix of determination, random tutorials, and asking
-            Google a lot of embarrassing questions like, "What even is HTML?"
-            The result is this delightful disaster.
-        </p>
-        <p>
-            Okay, so this website is not perfect, but neither am I. And
-            honestly, that is the point. This messy little creation is proof
-            that you can do something even if you have no clue what you are
-            doing. Sometimes you just have to dive in, even if it means things
-            end up looking a little, well, like this. Anyway, feel free to click
-            around, but fair warning, some things might not work. Or they might
-            work too well and crash your browser. Who knows. If you want to say
-            hi, share your thoughts, or even offer tips to fix this thing, I
-            would love to hear from you. Unless you are here to roast me. ehe.
-        </p>
+            <p>
+                Hey there and welcome to my little corner of the internet. You have
+                probably already noticed, this website is kind of a mess. Let me
+                just say it upfront, I cannot code. At all.
+            </p>
+            <p>
+                So if things look a bit weird or feel like they were thrown together
+                during a caffeine-fueled panic, well, now you know why. I made this
+                website using a mix of determination, random tutorials, and asking
+                Google a lot of embarrassing questions like, "What even is HTML?"
+                The result is this delightful disaster.
+            </p>
+            <p>
+                Okay, so this website is not perfect, but neither am I. And
+                honestly, that is the point. This messy little creation is proof
+                that you can do something even if you have no clue what you are
+                doing. Sometimes you just have to dive in, even if it means things
+                end up looking a little, well, like this. Anyway, feel free to click
+                around, but fair warning, some things might not work. Or they might
+                work too well and crash your browser. Who knows. If you want to say
+                hi, share your thoughts, or even offer tips to fix this thing, I
+                would love to hear from you. Unless you are here to roast me. ehe.
+            </p>
 
-        <a href="https://github.com/neroices">GitHub</a> &nbsp;/&nbsp;
-        <a href="https://gitlab.com/neroices">GitLab</a> &nbsp;/&nbsp;
-        <a href="https://xdaforums.com/m/alicization.10996241/">XDA</a>
-        &nbsp;/&nbsp;
-        <a href="https://x.com/letsmakeices">X</a> &nbsp;/&nbsp;
-        <a href="#" class="toggle" onclick="toggleDarkMode()">Dark Mode</a>
+                <a href="https://github.com/neroices">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://gitlab.com/neroices">GitLab</a> &nbsp;/&nbsp;
+                <a href="https://xdaforums.com/m/alicization.10996241/">XDA</a>
+                &nbsp;/&nbsp;
+                <a href="https://x.com/letsmakeices">X</a> &nbsp;/&nbsp;
+                <a href="#" class="toggle" onclick="toggleDarkMode()">Dark Mode</a>
+        </div>
 
         <script>
             function toggleDarkMode() {
