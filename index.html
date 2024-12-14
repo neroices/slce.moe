@@ -10,14 +10,37 @@
             font-family: "Times New Roman", Times, serif;
         }
         body {
+            background-color: #fff;
+            color: #000;
             margin-left: 30%;
             margin-right: 30%;
             margin-top: 8%;
             margin-bottom: 8%;
+            transition:
+                background-color 0.4s,
+                color 0.4s;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:link,
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            color: red;
         }
 
         p {
             font-size: 17px;
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: #f1f1f1;
         }
 
         @media (max-width: 1024px) {
@@ -81,6 +104,18 @@
         <a href="https://gitlab.com/neroices">GitLab</a> &nbsp;/&nbsp;
         <a href="https://xdaforums.com/m/alicization.10996241/">XDA</a>
         &nbsp;/&nbsp;
-        <a href="https://x.com/letsmakeices">X</a>
+        <a href="https://x.com/letsmakeices">X</a> &nbsp;/&nbsp;
+        <a href="#" class="toggle" onclick="toggleDarkMode()">Dark Mode</a>
+
+        <script>
+            function toggleDarkMode() {
+                document.body.classList.toggle("dark-mode");
+
+                const toggleText = document.body.classList.contains("dark-mode")
+                    ? "Light Mode"
+                    : "Dark Mode";
+                document.querySelector(".toggle").textContent = toggleText;
+            }
+        </script>
     </body>
 </html>
